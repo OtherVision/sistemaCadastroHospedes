@@ -1,32 +1,35 @@
-document.getElementById('formulario').addEventListener('submit', cadastraVeiculo);
+document.getElementById('formulario').addEventListener('submit', cadastraApartamento);
 
-function cadastraVeiculo(e) {
-    var modeloCarro = document.getElementById('modeloCarro').value;
-    var placaCarro = document.getElementById('placaCarro').value;
+function cadastraApartamento(e) {
+    var numeroApartamento = document.getElementById('numeroApartamento').value;
+    var nomeHospede = document.getElementById('nomeHospede').value;
     var time = new Date();
 
-    if (    !modeloCarro && !placaCarro) {
+    if (    !numeroApartamento && !nomeHospede) {
         alert("Por favor, preencha todos os campos");
         return false;
     }
 
-    carro = {
-        modelo: modeloCarro,
-        placa: placaCarro,
+    unidade = {
+        apartamento: numeroApartamento,
+        nome: nomeHospede,
         hora: time.getHours(),
-        minutos: time.getMinutes()
+        minutos: time.getMinutes(),
+        dia: time.getDate(),
+        mes: time.getMonth()+1,
+        ano: time.getFullYear()
     }
 
 
-    if (localStorage.getItem('patio2') === null ) {
-        var carros = [];
-        carros.push(carro);
-        localStorage.setItem('patio2', JSON.stringify(carros));
+    if (localStorage.getItem('edicifio') === null ) {
+        var unidades = [];
+        unidades.push(unidade);
+        localStorage.setItem('edicifio', JSON.stringify(unidades));
 
     } else {
-        var carros = JSON.parse(localStorage.getItem('patio2'));
-        carros.push(carro);
-        localStorage.setItem('patio2', JSON.stringify(carros));
+        var unidades = JSON.parse(localStorage.getItem('edicifio'));
+        unidades.push(unidade);
+        localStorage.setItem('edicifio', JSON.stringify(unidades));
     }
     
     document.getElementById('formulario').reset();
@@ -36,38 +39,43 @@ function cadastraVeiculo(e) {
     e.preventDefault();
 }
 
-function apagarVeiculo(placa) {
+function apagarVeiculo(nome) {
     
-    var carros = JSON.parse(localStorage.getItem('patio2'));
+    var unidades = JSON.parse(localStorage.getItem('edicifio'));
 
-    for (var i = 0; i < carros.length; i++) {
-        if (carros[i].placa == placa ) {
-            carros.splice(i, 1);
+    for (var i = 0; i < unidades.length; i++) {
+        if (unidades[i].nome == nome ) {
+            unidades.splice(i, 1);
         }
 
-        localStorage.setItem('patio2', JSON.stringify(carros));
+        localStorage.setItem('edicifio', JSON.stringify(unidades));
     }
 
     mostraPatio();
 }
 
 function mostraPatio() {
-    var carros = JSON.parse(localStorage.getItem('patio2'));
-    var carrosResultado = document.getElementById('resultados')
+    var unidades = JSON.parse(localStorage.getItem('edicifio'));
+    var unidadesResultado = document.getElementById('resultados')
     
-    carrosResultado.innerHTML = '';
+    unidadesResultado.innerHTML = '';
 
-    for (var i = 0; i < carros.length; i++ ) {
-        var modelo = carros[i].modelo;
-        var placa = carros[i].placa;
-        var hora = carros[i].hora;
-        var minutos = carros[i].minutos;
+    for (var i = 0; i < unidades.length; i++ ) {
+        var apartamento = unidades[i].apartamento;
+        var nome = unidades[i].nome;
+        var hora = unidades[i].hora;
+        var minutos = unidades[i].minutos;
+        var dia = unidades[i].dia;
+        var mes = unidades[i].mes;
+        var ano = unidades[i].ano;
 
-        carrosResultado.innerHTML += '<tr><td>' + modelo +
-                                '</td><td>' + placa +
-                                '</td><td>' + hora + ' : ' + minutos +
-                                '</td><td><button class="btn" onclick="apagarVeiculo(\'' + placa +'\')"> Excluir</button></td>' +
+        unidadesResultado.innerHTML += '<tr class="table-Js"><td>' + apartamento +
+                                '</td><td>' + nome +
+                                '</td><td>' + hora + ':' + minutos + '   -   ' + dia + '/' + mes + '/' + ano +
+                                '</td><td><button class="btn" onclick="apagarVeiculo(\'' + nome +'\')"> Excluir</button></td>' +
                                 '</tr>';
     }
+
+    unidadesResultado.style.background = "rgba(15, 75, 128, .5)";
 }
 

@@ -1,23 +1,29 @@
 * {padding: 0; margin: 0; list-style: none; text-decoration: none; box-sizing: border-box; }
-body {background: rgb(37, 77, 78);}
+body {background: rgba(15, 75, 128, .9)}
 
-.container {width: 90vw; margin: 10% auto; }
-.header h2 {  text-align: center; text-transform: uppercase;}
+/*   header da página       */
+.header {width: 100%; text-align: center; text-transform: uppercase; height: 20vh; background: black; color: white; display: flex; align-items: center; justify-content: center; }
+.header img {margin-right: 2rem;}
 
-.form-group {height: 5rem; margin: 2rem; display: flex; flex-direction: column; border: none;}
-.form-group input {height: 2rem; border-radius: 1rem;}
-.btn {width: 10rem; height: 2rem; border-radius: 1rem; margin: 0 0 2rem 2rem;}
+/*  conteudo principal da página        */
+.container {width: 90vw; margin: 0 auto; }
+
+#formulario {display: flex; justify-content: center; align-items: center;}
+
+.form-group {height: auto; margin: 2rem;  border: none;}
+.form-group input {height: 2rem; border-radius: 1rem; border: none; margin-top: 0.5rem;}
+.form-group input:focus {background: rgb(172, 207, 238);}
+.form-group label {font-weight: 600;}
+
+#nomeHospede {width: 10rem;}
+
+.btn {width: 10rem; height: 2rem;  border-radius: .5rem; cursor: pointer; border: none; box-shadow: 2px 2px 2px black; font-weight: 800; }
+.btn:hover {background: rgba(15, 75, 128, .9); transition: background 0.5s; color: white;}
+
 
 /*  tabela        */
-.col-lg-12 {border: 1px solid black; width: 100%;}
-.table {width: 100%; border: 1px solid black;}
-.table thead tr th{  border: 1px solid black; } 
-.table thead tr {  border: 1px solid black; } 
+.table {width: 100%; border: 1px solid black; border-radius: 0.5rem; padding: 1rem;}
+.table thead tr th{  border: 1px solid black; border-radius: 0.5rem;  padding: 1rem; font-size: 1.2rem; letter-spacing: 0.2rem;} 
 
+.table-Js {text-align: center; color: #000; font-weight: 500;}
 
-@media (min-width: 800px) {
-    .container {width: 50vw;}
-
-    .form-group input {width: 40%; text-align: center;}
-    .header {width: 100%; margin: 0 auto;}
-}

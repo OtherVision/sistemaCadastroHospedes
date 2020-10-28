@@ -7,37 +7,50 @@
 
     <link rel="stylesheet" href="./css/style.css">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+    <link rel="manifest" href="./images/site.webmanifest">
+
 </head>
 <body onload="mostraPatio()">
-    <div class="container">
 
-        <div class="header">
-            <h2>Sistema Lindacap</h2>
+    <header class="header">
+        <img src="./images/favicon-32x32.png" alt="Imagem logo lindacap" title="logo lindacap">
+        <h1>Sistema Lindacap</h1>
+        
+    </header>
 
-            <div class="jumbotron">
+    <main class="container">
+
+        <section class="form-section">
+            
+
+            <div class="form">
                 <form action="" id="formulario">
 
                     <fieldset class="form-group">
-                        <label for="modeloCarro">NÚMERO DO APARTAMENTO:</label>
-                        <input type="text" id="modeloCarro" class="form-control">
+                        <label for="numeroApartamento">NÚMERO DO APARTAMENTO:</label>
+                        <input type="text" id="numeroApartamento" class="form-control">
                     </fieldset>
 
                     <fieldset class="form-group">
-                        <label for="placaCarro">NOME DO HOSPEDE:</label>
-                        <input type="text" id="placaCarro" class="form-control" name="">
+                        <label for="nomeHospede">NOME DO HOSPEDE:</label>
+                        <input type="text" id="nomeHospede" class="form-control">
                     </fieldset>
 
+                    
                     <button type="submit" class="btn btn-primary">Adicionar</button>
 
 
                     
                 </form>
             </div>
-        </div>
+        </section>
 
 
-        <div class="marketing">
-            <div class="col-lg-12">
+        <section>
+            <div class="main-table">
                 <table class="table">
                     <thead>
                         <tr>
@@ -52,9 +65,9 @@
                     </thead>
                 </table>
             </div>
-        </div>
+        </section>
 
-    </div>
+    </main>
 
     <script src="./js/main.js"></script>
 </body>
