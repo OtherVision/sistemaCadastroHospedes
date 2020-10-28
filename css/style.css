@@ -1,0 +1,23 @@
+* {padding: 0; margin: 0; list-style: none; text-decoration: none; box-sizing: border-box; }
+body {background: rgb(37, 77, 78);}
+
+.container {width: 90vw; margin: 10% auto; }
+.header h2 {  text-align: center; text-transform: uppercase;}
+
+.form-group {height: 5rem; margin: 2rem; display: flex; flex-direction: column; border: none;}
+.form-group input {height: 2rem; border-radius: 1rem;}
+.btn {width: 10rem; height: 2rem; border-radius: 1rem; margin: 0 0 2rem 2rem;}
+
+/*  tabela        */
+.col-lg-12 {border: 1px solid black; width: 100%;}
+.table {width: 100%; border: 1px solid black;}
+.table thead tr th{  border: 1px solid black; } 
+.table thead tr {  border: 1px solid black; } 
+
+
+@media (min-width: 800px) {
+    .container {width: 50vw;}
+
+    .form-group input {width: 40%; text-align: center;}
+    .header {width: 100%; margin: 0 auto;}
+}

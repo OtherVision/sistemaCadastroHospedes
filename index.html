@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Lindacap</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body onload="mostraPatio()">
+    <div class="container">
+
+        <div class="header">
+            <h2>Sistema Lindacap</h2>
+
+            <div class="jumbotron">
+                <form action="" id="formulario">
+
+                    <fieldset class="form-group">
+                        <label for="modeloCarro">NÚMERO DO APARTAMENTO:</label>
+                        <input type="text" id="modeloCarro" class="form-control">
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <label for="placaCarro">NOME DO HOSPEDE:</label>
+                        <input type="text" id="placaCarro" class="form-control" name="">
+                    </fieldset>
+
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+
+
+                    
+                </form>
+            </div>
+        </div>
+
+
+        <div class="marketing">
+            <div class="col-lg-12">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Apartamento</th>
+                            <th>Nome</th>
+                            <th>Entrada</th>
+                            <th>Finalizar</th>
+                        </tr>
+
+                        <tbody id="resultados"> </tbody>
+
+                    </thead>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
