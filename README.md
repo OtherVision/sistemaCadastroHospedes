@@ -1,8 +1,8 @@
 # sistema de cadastro para hospedes
 
 <p align=center>
-    <img src="./images/gifs-lindacap.gif">
-    <img src="./images/gifs-lindacap2.gif">
+    <img src="./images/gif-lindacap1.gif">
+    <img src="./images/gif-lindacap2.gif">
 </p>
 
 >Status do projeto: concluído :ballot_box_with_check:
@@ -14,8 +14,8 @@ Página de cadastro e controle de clientes para o condominio Lindacap Flat Resid
 ##<strong>Funcionalidades </strong> :arrow_forward:
 
 :point_right: Campos para a entrada de dados; <br>
-:point_right: Botão para adicionar hospede;
-:point_right: Botão para excluir o hospede;
+:point_right: Botão para adicionar hospede;<br>
+:point_right: Botão para excluir o hospede;<br>
 
 ##<strong>Informações </strong> :speaker:
 
