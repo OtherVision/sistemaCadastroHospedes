@@ -11,7 +11,7 @@ body {background: rgba(15, 75, 128, .9)}
 #formulario {display: flex; justify-content: center; align-items: center;}
 
 .form-group {height: auto; margin: 2rem;  border: none;}
-.form-group input {height: 2rem; border-radius: 1rem; border: none; margin-top: 0.5rem;}
+.form-group input {height: 2rem; border-radius: 1rem; border: none; margin-top: 0.5rem; text-align: center; } 
 .form-group input:focus {background: rgb(172, 207, 238);}
 .form-group label {font-weight: 600;}
 
