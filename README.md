@@ -19,7 +19,7 @@ Página de cadastro e controle de clientes para o condominio Lindacap Flat Resid
 
 ##<strong>Informações </strong> :speaker:
 
-:point_right: Para a instalação, clonar o diretorio e abrir o arquivo no navegador;
-:point_right: Banco de dados inexistente, todos os dados ficam gravados diretamente no navegador;
+:point_right: Para a instalação, clonar o diretorio e abrir o arquivo no navegador;<br>
+:point_right: Banco de dados inexistente, todos os dados ficam gravados diretamente no navegador;<br>
 :point_right: Usei como base para o projeto, um video antigo sobre cadastros de estacionamento que se encontra no canal do link:
 https://www.youtube.com/channel/UCsaZv7dlu8737N0e44kX66w;
