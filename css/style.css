@@ -1,8 +1,11 @@
-* {padding: 0; margin: 0; list-style: none; text-decoration: none; box-sizing: border-box; }
+* {padding: 0; margin: 0; list-style: none; text-decoration: none; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+@import url('https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800&display=swap');
 body {background: rgba(15, 75, 128, .9)}
 
 /*   header da página       */
 .header {width: 100%; text-align: center; text-transform: uppercase; height: 20vh; background: black; color: white; display: flex; align-items: center; justify-content: center; }
+.header h1 {font-family: 'Goldman', cursive; letter-spacing: 0.2rem; font-size: 32px; font-weight: 700;}
 .header img {margin-right: 2rem;}
 
 /*  conteudo principal da página        */
@@ -13,11 +16,11 @@ body {background: rgba(15, 75, 128, .9)}
 .form-group {height: auto; margin: 2rem;  border: none;}
 .form-group input {height: 2rem; border-radius: 1rem; border: none; margin-top: 0.5rem; text-align: center; } 
 .form-group input:focus {background: rgb(172, 207, 238);}
-.form-group label {font-weight: 600;}
+.form-group label {font-weight: 700; font-size: 1rem;}
 
 #nomeHospede {width: 10rem;}
 
-.btn {width: 10rem; height: 2rem;  border-radius: .5rem; cursor: pointer; border: none; box-shadow: 2px 2px 2px black; font-weight: 800; }
+.btn {width: 10rem; height: 2rem;  border-radius: .5rem; cursor: pointer; border: none; box-shadow: 2px 2px 2px black; font-weight: 800;  font-size: 13px;   }
 .btn:hover {background: rgba(15, 75, 128, .9); transition: background 0.5s; color: white;}
 
 
@@ -25,5 +28,5 @@ body {background: rgba(15, 75, 128, .9)}
 .table {width: 100%; border: 1px solid black; border-radius: 0.5rem; padding: 1rem;}
 .table thead tr th{  border: 1px solid black; border-radius: 0.5rem;  padding: 1rem; font-size: 1.2rem; letter-spacing: 0.2rem;} 
 
-.table-Js {text-align: center; color: #000; font-weight: 500;}
+.table-Js {text-align: center; color: #000; font-weight: 500; font-size: 1rem;}
 

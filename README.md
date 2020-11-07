@@ -1,7 +1,7 @@
 # sistema de cadastro para hospedes
 
 <p align=center>
-    <img src="./images/gif-lindacap1.gif" padding-right=10px>
+    <img src="./images/gif-lindacap1.gif">
     <img src="./images/gif-lindacap2.gif">
 </p>
 
